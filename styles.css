@@ -122,3 +122,12 @@ button.cal-row:hover{filter:brightness(1.15)}
 .nav-item{min-height:42px;padding:9px 12px}
 .sidebar-collections{margin-top:12px}
 }
+
+/* Cartões: texto um pouco maior, elementos mais próximos, nota numérica ao lado das estrelas */
+.poster-grid{row-gap:20px;column-gap:16px}
+.card-copy{padding:8px 1px 0}
+.poster-card h3{font-size:16px;line-height:1.3;margin:0 0 4px;min-height:2.6em}
+.card-meta{font-size:13px;gap:6px;line-height:1.4}
+.card-rating{display:flex;align-items:center;padding:4px 0 0}
+.card-rating .stars{font-size:14px;letter-spacing:-1.5px}
+.rating-num{margin-left:6px;font:700 14px/1 var(--display);color:var(--gold);flex-shrink:0}
