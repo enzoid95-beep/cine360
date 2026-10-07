@@ -131,3 +131,19 @@ button.cal-row:hover{filter:brightness(1.15)}
 .card-rating{display:flex;align-items:center;padding:4px 0 0}
 .card-rating .stars{font-size:14px;letter-spacing:-1.5px}
 .rating-num{margin-left:6px;font:700 14px/1 var(--display);color:var(--gold);flex-shrink:0}
+
+/* Detalhe: foto do título ocupando todo o cartão, com camada escura para legibilidade; episódios sob o pôster */
+.detail-dialog{background:linear-gradient(180deg,rgba(16,17,19,.86) 0%,rgba(16,17,19,.93) 55%,rgba(16,17,19,.97) 100%),var(--detail-bg,none) center/cover no-repeat,#191b21}
+.detail-body{text-shadow:0 1px 6px #000c}
+.detail-dialog .detail-banner{display:none}
+.seasons-block{margin-top:16px}
+.seasons-block .detail-label{margin:0 0 8px}
+.seasons-block .rating-help{font-size:11px;margin-bottom:8px}
+.seasons-block .season-heading{font-size:13px}
+@media (min-width:901px){
+.detail-body{margin-top:0;padding-top:30px}
+.detail-col-poster{max-height:calc(100dvh - 40px - 86px);overflow:auto;padding-right:4px;scrollbar-width:thin}
+.detail-col-poster .detail-poster{max-height:none;width:100%}
+.detail-col-actions{background:rgba(16,17,19,.55);border-radius:14px;padding:16px 16px 16px 16px;backdrop-filter:blur(3px)}
+.detail-col-info{background:rgba(16,17,19,.25);border-radius:14px;padding:6px 0 0}
+}
