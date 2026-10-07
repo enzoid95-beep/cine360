@@ -330,3 +330,7 @@ main,footer{background:transparent}
 .detail-col-poster{background:transparent;border:0;box-shadow:none;backdrop-filter:none}
 .detail-col-poster .detail-poster{box-shadow:0 0 0 1px #f0cd8040,0 16px 32px #0009}
 }
+
+/* Cumprimento: sem a frase do topo, subido, com a frase de apoio maior */
+.greeting{margin-top:-14px;margin-bottom:18px}
+.greeting p{font-size:20px;font-weight:600}
