@@ -248,3 +248,9 @@ button.cal-row:hover{filter:brightness(1.15)}
 .platform-empty{font-weight:500;color:#bdb6a7}
 .hero-progress{position:absolute;left:0;right:0;bottom:0;height:4px;background:#ffffff1f;z-index:3}
 .hero-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#f5c97a,#ff9978);transition:none}
+
+/* Topo mais enxuto: sem trilha "CINE360 / Início" nem linha divisória; conteúdo sobe */
+.breadcrumb{display:none}
+.topbar{height:68px;border-bottom:0}
+main{padding-top:20px}
+.greeting{margin-bottom:22px}
