@@ -103,3 +103,22 @@ button.cal-row:hover{filter:brightness(1.15)}
 .cal-row-open .icon{width:12px;height:12px}
 @media (max-width:760px){.calendar-grid .calendar-cell{min-height:70px;padding:5px}.cal-chip{font-size:9px}.day-panel-list{grid-template-columns:1fr}}
 .calendar-head h2{text-transform:none}
+
+/* Sidebar fixa: sem rolagem, compacta em telas menores */
+.sidebar{overflow:hidden}
+.nav-item{min-height:50px;padding:12px 12px}
+@media (max-height:1000px){
+.sidebar{padding-top:24px;padding-bottom:14px}
+.brand{margin-bottom:26px}
+.nav-caption{margin-bottom:6px}
+.sidebar-collections{margin-top:18px}
+.sidebar-bottom{padding-top:14px}
+.sidebar-note{display:none}
+.profile{padding-top:12px;margin-top:8px}
+.nav-item{min-height:46px;padding:10px 12px;margin:2px 0}
+}
+@media (max-height:800px){
+.profile{display:none}
+.nav-item{min-height:42px;padding:9px 12px}
+.sidebar-collections{margin-top:12px}
+}
