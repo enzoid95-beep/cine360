@@ -165,3 +165,37 @@ button.cal-row:hover{filter:brightness(1.15)}
 .wish-state{font-size:12px;font-weight:700;color:var(--lime)}
 .up-card{position:relative}
 .up-card .poster-fallback{height:auto;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;font:500 16px/1.3 var(--display);text-align:center;padding:12px}
+
+/* Detalhe: temporadas em faixa horizontal no rodapé; nota com estrelas maiores e arrastável */
+.detail-dialog #detailContent{height:100%;display:flex;flex-direction:column}
+@media (min-width:901px){
+.detail-dialog{height:min(880px,calc(100dvh - 40px))}
+.detail-body{flex:1;min-height:0;max-height:none;height:auto;display:grid;grid-template-rows:minmax(0,1fr) auto;margin-top:0;padding-top:28px}
+.detail-col{min-height:0;overflow:auto;scrollbar-width:thin}
+.detail-col-actions{max-height:none;height:100%}
+.detail-col-poster{max-height:none;height:100%}
+.detail-col-info{height:100%}
+.detail-col-poster .detail-poster{max-height:300px}
+}
+.seasons-row{grid-column:1/-1;border-top:1px solid #37373f;padding-top:12px;min-width:0;max-height:250px;display:flex;flex-direction:column}
+.seasons-head{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap;margin-bottom:10px}
+.seasons-head .detail-label{margin:0}
+.seasons-head .rating-help{margin:0}
+.seasons-track{display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;flex:1;min-height:0;scrollbar-width:thin}
+.season-col{flex:0 0 auto;width:150px;display:flex;flex-direction:column;min-height:0;background:rgba(16,17,19,.6);border:1px solid #37373f;border-radius:10px;padding:10px}
+.season-heading{font:700 14px/1.2 var(--display);display:flex;flex-direction:column;gap:3px;margin-bottom:8px;color:#f1e4cb}
+.season-heading span{font:500 11px var(--font);color:var(--muted)}
+.season-col .episodes{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;overflow-y:auto;min-height:0;align-content:start}
+.season-col .episode{padding:5px 0;font-size:11px;min-width:0}
+.rating-picker{font-size:36px;line-height:1;display:flex;gap:3px;touch-action:none;user-select:none;cursor:pointer;padding:4px 0}
+.rating-picker .rating-star{font-size:inherit}
+.rating-value{font:700 26px/1 var(--display);color:var(--gold);margin-left:12px;min-width:48px}
+.rating-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.season-col{width:172px}
+.season-col .episodes{grid-template-columns:repeat(3,minmax(0,1fr))}
+.season-col .episode{overflow:hidden;white-space:nowrap;padding:5px 2px;font-size:11px}
+@media (min-width:901px){
+.detail-dialog #detailContent{overflow:hidden}
+.detail-body{flex:none;height:100%;min-height:0}
+}
+@media (min-width:901px){.seasons-row{max-height:225px}}
