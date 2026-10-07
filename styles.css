@@ -207,3 +207,12 @@ button.cal-row:hover{filter:brightness(1.15)}
 .hero-nav button:hover{background:#2a2730;border-color:#e4cfa0}
 .hero-counter{font-size:12px;font-weight:700;color:#f0e6d2;min-width:56px;text-align:center;letter-spacing:.5px}
 .hero-carousel .hero-content{padding-bottom:70px}
+
+/* Temporadas em linhas: nome da temporada à esquerda, episódios na horizontal */
+.seasons-row{max-height:225px}
+.seasons-track{flex-direction:column;overflow-x:hidden;overflow-y:auto;gap:8px;padding-bottom:4px;padding-right:4px}
+.season-col{width:100%;flex:0 0 auto;flex-direction:row;align-items:center;gap:14px;padding:9px 12px;border-radius:10px}
+.season-heading{flex:0 0 165px;margin:0;text-transform:uppercase;letter-spacing:.6px;font:700 13px/1.2 var(--display)}
+.season-heading span{text-transform:none;letter-spacing:0;margin-top:2px}
+.season-col .episodes{display:flex;flex-direction:row;flex-wrap:nowrap;gap:6px;overflow-x:auto;overflow-y:hidden;min-width:0;flex:1;grid-template-columns:none;padding-bottom:4px;scrollbar-width:thin}
+.season-col .episode{flex:0 0 auto;min-width:58px;width:auto;padding:7px 11px;font-size:12px;white-space:nowrap}
