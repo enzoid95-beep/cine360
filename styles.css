@@ -307,3 +307,9 @@ main,footer{background:transparent}
 .detail-col-actions .details-full{gap:12px}
 }
 @media (min-width:901px){.rating-picker{font-size:32px;gap:2px}}
+
+/* Linha neon laranja em volta de cada card */
+.poster-art,.stat,.session-card,.hero,.collection-card,.choice-card,.collection-hero,.day-panel,.empty,.detail-col,.detail-col-info,.detail-col-actions,.up-card>img,.up-card .poster-fallback,.detail-col-poster .detail-poster{box-shadow:inset 0 1px 0 #ffb27a33,inset 0 0 14px #ff6a1f14,0 0 0 1px #ff8a3dcc,0 0 6px #ff7a2ecc,0 0 18px #ff6a1f88,0 0 42px #ff5a1a40,0 16px 32px #0009}
+.poster-card:hover .poster-art,.up-card:hover>img{box-shadow:inset 0 1px 0 #ffb27a44,0 0 0 1px #ffa05ce6,0 0 8px #ff8a3ddd,0 0 26px #ff6a1f99,0 0 56px #ff5a1a55,0 13px 24px #0008}
+.stat:hover,.session-card:hover,.collection-card:hover{box-shadow:inset 0 1px 0 #ffb27a44,0 0 0 1px #ffa05ce6,0 0 8px #ff8a3ddd,0 0 26px #ff6a1f99,0 0 56px #ff5a1a55,0 16px 32px #0009}
+.detail-col{border-color:transparent}
