@@ -79,3 +79,27 @@ footer{display:flex;align-items:center;gap:14px;margin:0 40px;padding:23px 0 17p
 .filter-bar .drop-panel button.selected{background:linear-gradient(145deg,#e1eab0,#cbd58e);color:#252917}
 .source-note{font-size:11px;line-height:1.7;color:#aeb0bc;margin:14px 0 0;max-width:980px}
 .calendar-event{font-family:var(--font)}
+
+/* Calendário compacto: dias com resumo e painel de lançamentos do dia */
+.calendar-grid .calendar-cell{min-height:92px;padding:8px;display:flex;flex-direction:column;gap:4px;align-items:stretch;text-align:left;font:inherit;color:inherit;width:100%;cursor:pointer}
+.calendar-cell.day-cell:hover{background:#23242b}
+.calendar-cell.day-cell.selected{outline:2px solid var(--lilac);outline-offset:-2px;background:#2a2535}
+.calendar-cell.day-cell .day-number{font-size:12px;font-weight:700}
+.cal-chip{display:block;font-size:10px;line-height:1.35;padding:3px 6px;border-radius:4px;background:#52392c;border-left:2px solid var(--coral);color:#f7d7bb;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cal-chip.stream{background:#2f2a45;border-left-color:var(--lilac);color:#e0d7ff}
+.cal-more{font-size:10px;font-weight:700;color:var(--lilac);margin-top:auto}
+.day-panel{margin-top:18px;border:1px solid #47434d;border-radius:12px;background:#1b1c22;padding:20px 22px}
+.day-panel-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+.day-panel-head h3{font-size:22px;margin:0}
+.day-panel-count{font-size:12px;color:var(--muted)}
+.day-panel-head .text-btn{margin-left:auto}
+.day-panel-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+.cal-row{width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:3px;text-align:left;padding:11px 13px;border-radius:9px;background:#52392c;border-left:3px solid var(--coral);color:#f7d7bb;font-size:13px}
+.cal-row.stream{background:#2f2a45;border-left-color:var(--lilac);color:#e0d7ff}
+button.cal-row:hover{filter:brightness(1.15)}
+.cal-row-title{font-weight:700;line-height:1.35}
+.cal-row-meta{font-size:11px;opacity:.85}
+.cal-row-open{font-size:11px;font-weight:700;margin-top:4px;display:inline-flex;gap:6px;align-items:center}
+.cal-row-open .icon{width:12px;height:12px}
+@media (max-width:760px){.calendar-grid .calendar-cell{min-height:70px;padding:5px}.cal-chip{font-size:9px}.day-panel-list{grid-template-columns:1fr}}
+.calendar-head h2{text-transform:none}
