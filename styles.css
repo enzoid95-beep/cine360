@@ -334,3 +334,8 @@ main,footer{background:transparent}
 /* Cumprimento: sem a frase do topo, subido, com a frase de apoio maior */
 .greeting{margin-top:-14px;margin-bottom:18px}
 .greeting p{font-size:20px;font-weight:600}
+
+/* Campos preenchidos pelo catálogo: somente leitura */
+.is-locked{opacity:.72;cursor:not-allowed}
+input.is-locked,textarea.is-locked{background:#1a1c21!important;border-style:dashed}
+.manual-fields.is-locked>summary::after{content:'🔒 Dados do catálogo — limpe a seleção para editar';margin-left:10px;font-size:11px;color:var(--gold);font-weight:600}
