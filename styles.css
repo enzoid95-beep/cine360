@@ -30,3 +30,52 @@ footer{display:flex;align-items:center;gap:14px;margin:0 40px;padding:23px 0 17p
 @media(max-width:760px){.sidebar nav .nav-item{font-size:9px}.hero p{font-size:13px}.hero-meta{font-size:12px}.stat-label{font-size:11px}.poster-card h3{font-size:16px}.card-meta{font-size:12px}.card-rating .rating-help{font-size:11px}.section-header p{font-size:12px}.session-card p{font-size:12px}.synopsis-block p{font-size:14px}.detail-body{row-gap:23px}.synopsis-block .detail-label{margin:0 0 10px}.session-card h2{font-size:22px}}
 
 .poster-fallback.detail-poster{height:auto;min-height:240px}@media(max-width:760px){.poster-fallback.detail-poster{min-height:135px;font-size:15px}}
+
+/* ---- Ajustes 2026-10-07 ---- */
+/* Sidebar: texto, ícones e estrelas da aba lateral maiores */
+.nav-caption{font-size:12px;letter-spacing:2px}
+.nav-item{font-size:15px;line-height:1.35;min-height:54px;padding:14px 12px;gap:13px}
+.nav-item .icon{width:24px;height:24px}
+.nav-item i{font-size:12px;padding:3px 8px}
+.brand{margin-bottom:38px}
+
+/* Detalhe do título: layout horizontal, sem rolagem no desktop */
+@media (min-width:901px){
+.detail-dialog{width:min(1200px,calc(100vw - 40px));max-height:calc(100dvh - 40px);overflow:hidden}
+.detail-dialog #detailContent{display:block}
+.detail-banner{height:150px}
+.detail-body{display:grid;grid-template-columns:190px minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:start;padding:0 30px 26px;margin-top:-64px;max-height:calc(100dvh - 40px - 86px);overflow:hidden;position:relative}
+.detail-col{min-width:0}
+.detail-poster{margin-top:0;width:100%;max-height:285px;aspect-ratio:2/3;height:auto}
+.detail-col-info .eyebrow{margin-top:4px}
+.detail-col-info h2{font-size:38px;margin:8px 0 6px}
+.detail-col-info .meta{font-size:13px;line-height:1.6}
+.detail-col-info .synopsis-block{margin-top:14px}
+.detail-col-info .synopsis-block p{font-size:14px;line-height:1.6;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.detail-col-info .detail-label{margin:0 0 6px}
+.credits-block{margin-top:14px;padding-top:12px;border-top:1px solid #37373f}
+.credit-row{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:baseline;margin-bottom:6px;font-size:13px;line-height:1.5;color:#e8e6ef}
+.credit-row .detail-label{margin:0;white-space:nowrap}
+.detail-col-info .detail-source{margin-top:14px;padding-top:12px}
+.detail-col-actions{max-height:calc(100dvh - 40px - 86px);overflow:auto;padding-right:8px;scrollbar-width:thin}
+.detail-col-actions .details-full{display:flex;flex-direction:column;gap:2px}
+.detail-col-actions .rating-area{margin-top:0}
+.detail-col-actions .detail-controls{margin:12px 0}
+.detail-col-actions .notes-label textarea{min-height:70px}
+.detail-col-actions .demo-notice,.detail-col-actions .conflict-note{font-size:11px;padding:10px 12px}
+}
+
+/* Menus suspensos no mesmo visual dos filtros do painel */
+.drop-menu{position:relative;display:inline-block}
+.drop-menu.end{margin-left:auto}
+.filter-bar .drop-trigger{display:inline-flex;align-items:center;gap:10px;min-height:40px;padding:9px 13px;border:1px solid #4c4e58;border-radius:7px;background:linear-gradient(145deg,#292c32,#202227);box-shadow:inset 0 1px 0 #fff08,0 2px 0 #090a0c;color:#dbdde6;font-size:11px;font-weight:700;white-space:nowrap}
+.filter-bar .drop-trigger b{color:#f1e4cb;font-weight:800}
+.filter-bar .drop-trigger:hover{background:#393440;border-color:#97899f}
+.filter-bar .drop-trigger .icon{width:13px;height:13px;color:#aeb0bc;transform:rotate(90deg)}
+.drop-menu.open .filter-bar .drop-trigger .icon,.drop-menu.open .drop-trigger .icon{transform:rotate(270deg)}
+.drop-panel{position:absolute;top:calc(100% + 8px);right:0;z-index:30;min-width:240px;max-height:360px;overflow:auto;display:grid;gap:4px;padding:8px;background:#191b21;border:1px solid #565160;border-radius:12px;box-shadow:0 18px 40px #000b}
+.filter-bar .drop-panel button{display:block;width:100%;text-align:left;padding:11px 13px;min-height:40px;border-radius:8px;border:0;background:transparent;box-shadow:none;font-size:12px;font-weight:700;color:#dbdde6}
+.filter-bar .drop-panel button:hover{background:#2b2831;color:#fff}
+.filter-bar .drop-panel button.selected{background:linear-gradient(145deg,#e1eab0,#cbd58e);color:#252917}
+.source-note{font-size:11px;line-height:1.7;color:#aeb0bc;margin:14px 0 0;max-width:980px}
+.calendar-event{font-family:var(--font)}
