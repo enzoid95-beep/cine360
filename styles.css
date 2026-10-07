@@ -229,3 +229,22 @@ button.cal-row:hover{filter:brightness(1.15)}
 .hero-carousel .hero-synopsis{font-size:13px;line-height:1.6;height:4.8em;margin:12px 0 18px;max-width:520px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .hero-carousel .primary{align-self:flex-start}
 .hero-carousel.hero-empty{display:flex;align-items:center}
+
+/* Destaque v3: estrelas e nota maiores, data/gênero junto ao título, sinopse completa, barra de 20s, plataformas */
+.hero-carousel{height:500px}
+.hero-carousel .hero-content{justify-content:flex-start;padding:34px 34px 70px;max-width:620px}
+.hero-carousel h2{margin:12px 0 6px;min-height:0;max-height:2.2em}
+.hero-carousel .hero-meta{min-height:0;margin:0 0 4px;font-size:13px}
+.hero-rating{margin:10px 0 0;gap:12px;min-height:0}
+.hero-rating .stars{font-size:26px;letter-spacing:-2px}
+.hero-rating b{font-size:30px}
+.hero-rating span{font-size:14px}
+.hero-carousel .hero-synopsis{height:auto;max-height:118px;overflow-y:auto;display:block;-webkit-line-clamp:none;font-size:14px;line-height:1.6;margin:12px 0 12px;padding-right:6px;scrollbar-width:thin}
+.hero-platforms{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px;min-height:34px}
+.hero-platforms-label{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#bfb6a6;font-weight:700}
+.platform-chip{display:inline-flex;align-items:center;height:30px;padding:0 10px;border-radius:7px;background:#ffffff14;border:1px solid #ffffff26}
+.platform-chip img{height:18px;width:auto;display:block}
+.platform-text,.platform-empty{font-size:12px;font-weight:700;color:#e8e2d4;padding:6px 10px;border-radius:7px;background:#ffffff14;border:1px solid #ffffff26}
+.platform-empty{font-weight:500;color:#bdb6a7}
+.hero-progress{position:absolute;left:0;right:0;bottom:0;height:4px;background:#ffffff1f;z-index:3}
+.hero-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#f5c97a,#ff9978);transition:none}
