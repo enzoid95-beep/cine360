@@ -199,3 +199,11 @@ button.cal-row:hover{filter:brightness(1.15)}
 .detail-body{flex:none;height:100%;min-height:0}
 }
 @media (min-width:901px){.seasons-row{max-height:225px}}
+
+/* Carrossel do destaque: próximos lançamentos */
+.hero-noimg{background:radial-gradient(ellipse at 20% 0,#5a4a3a88,transparent 60%),radial-gradient(ellipse at 90% 100%,#3b2f4a88,transparent 55%),#22201c}
+.hero-nav{position:absolute;right:20px;bottom:18px;z-index:3;display:flex;align-items:center;gap:10px}
+.hero-nav button{width:36px;height:36px;border-radius:50%;background:#101215d9;border:1px solid #ffffff55;color:#f3f2ee;font-size:16px;display:grid;place-items:center;padding:0}
+.hero-nav button:hover{background:#2a2730;border-color:#e4cfa0}
+.hero-counter{font-size:12px;font-weight:700;color:#f0e6d2;min-width:56px;text-align:center;letter-spacing:.5px}
+.hero-carousel .hero-content{padding-bottom:70px}
