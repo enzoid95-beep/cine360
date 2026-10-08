@@ -705,3 +705,7 @@ img[data-image]{background:#191a22}
   .sidebar.more-open{z-index:60}
   .sidebar nav .nav-item.active{background:none}
 }
+
+/* Nota pública do TMDB dentro do diálogo do título */
+.tmdb-note{display:block;margin-top:6px;font-size:14px;font-weight:700;color:var(--gold)}
+.tmdb-note[hidden]{display:none}
