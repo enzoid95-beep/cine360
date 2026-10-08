@@ -548,3 +548,4 @@ img[data-image]{background:#191a22}
 .add-rating-row{flex:1;min-width:0}
 .add-rating-row .rating-picker{font-size:24px}
 .add-rating-clear{margin-top:0;white-space:nowrap}
+.tmdb-notice{margin:8px 0 0;font-size:12px;color:#ff9a7a}
