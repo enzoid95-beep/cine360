@@ -386,3 +386,22 @@ input.is-locked,textarea.is-locked{background:#1a1c21!important;border-style:das
 .trophy small{font-size:10.5px;color:#b7b8c4;line-height:1.35;display:block}
 @media(max-width:760px){.greeting-side{justify-content:flex-start;margin-top:10px}.level-pop{position:fixed;left:16px;right:16px;top:auto;bottom:90px;width:auto}}
 .level-pop .lp-hint{font-size:13px!important;line-height:1.5;font-weight:400}
+.level-pill{display:inline-flex;align-items:center;gap:10px;padding:7px 13px 7px 8px;border-radius:999px;background:linear-gradient(145deg,#2a2119,#17140f);border:1px solid #ff8a3d66;box-shadow:0 0 14px #ff6a1f33,inset 0 1px 0 #ffffff14;color:#f5f0f7;font-size:12px;font-weight:700;white-space:nowrap;cursor:pointer;transition:border-color .2s,box-shadow .2s}
+.level-pill:hover{border-color:#ff8a3dcc;box-shadow:0 0 20px #ff6a1f55,inset 0 1px 0 #ffffff14}
+.level-pill:focus-visible{outline:2px solid #ff8a3d;outline-offset:3px}
+.lp-pct{font-size:12px;font-weight:800;color:var(--gold)}
+.level-dialog{width:min(680px,calc(100vw - 32px));padding:30px 32px}
+.level-dialog h2{font-size:34px;margin:8px 0 18px;letter-spacing:-.03em}
+.lv-hero{display:flex;gap:24px;align-items:center;margin-bottom:6px}
+.lv-ring{width:150px;height:150px;border-radius:50%;display:grid;place-items:center;flex:none;box-shadow:0 0 28px #ff7a2e55}
+.lv-ring>div{width:116px;height:116px;border-radius:50%;background:#191b21;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.lv-ring strong{font-size:34px;letter-spacing:-.03em;line-height:1}
+.lv-ring span{font-size:11px;color:#b7b8c4;margin-top:4px}
+.lv-copy{flex:1;min-width:0}
+.lv-next{margin:0 0 6px;font-size:15px}
+.level-dialog .lp-hint{font-size:14px;margin:0;color:#c9c8d4}
+.lv-bar{height:12px;border-radius:99px;background:#0c0d12;border:1px solid #2c2b36;overflow:hidden;margin-top:14px}
+.lv-bar span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,#ffb36b,#ff7a2e,#ff5a1a);box-shadow:0 0 12px #ff7a2e99}
+.level-dialog .lp-stats{margin:20px 0}
+.level-dialog h4{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--lilac);margin:0 0 10px}
+@media(max-width:640px){.lv-hero{flex-direction:column;align-items:flex-start}.level-dialog{padding:24px 20px}.level-dialog h2{font-size:28px}}
