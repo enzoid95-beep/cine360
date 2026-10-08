@@ -428,3 +428,9 @@ input.is-locked,textarea.is-locked{background:#1a1c21!important;border-style:das
 .lv-trophies .trophy small{-webkit-line-clamp:1;font-size:10px}
 .lv-trophies .trophy strong{-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
 .lv-main h4{margin-bottom:8px}
+.tmdb-box{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:0 0 22px;padding:16px 18px;border-radius:14px;background:#14161c;border:1px solid #ff8a3d55;box-shadow:0 0 18px #ff6a1f22}
+.tmdb-box strong{font-size:14px}
+.tmdb-box p{margin:4px 0 0;font-size:12px;color:#b9bbc6;max-width:520px}
+.tmdb-row{display:flex;gap:10px;flex-wrap:wrap;flex:1;min-width:280px;justify-content:flex-end}
+.tmdb-row input{flex:1;min-width:200px;max-width:340px;padding:10px 12px;border-radius:10px;border:1px solid #4c4e58;background:#0d0e13;color:#f5f0f7;font:inherit;font-size:13px}
+.tmdb-row button{white-space:nowrap}
