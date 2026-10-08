@@ -485,3 +485,5 @@ input.is-locked,textarea.is-locked{background:#1a1c21!important;border-style:das
 .trend-choice{padding:11px 16px;border-radius:9px;border:1px solid #cfac6a55;background:#1b1c25;color:#eeedf0;font:800 14px var(--font);cursor:pointer}
 .trend-choice:hover{border-color:#e1eab0}
 .trend-choice[aria-pressed="true"]{background:linear-gradient(145deg,#e1eab0,#cbd58e);color:#252917;border-color:transparent}
+
+img[data-image]{background:#191a22}
