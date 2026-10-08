@@ -550,6 +550,7 @@ img[data-image]{background:#191a22}
 @media(min-width:761px){
 .sidebar .brand{padding:0}
 .sidebar .brand-logo{width:calc(100% + 16px);max-width:none;margin:0 -8px}
-.sidebar .nav-item{font-size:12px;min-height:40px;padding:9px 12px;margin:1px 0;gap:10px}
+.sidebar .nav-item{font-size:13.5px;min-height:46px;padding:11px 12px;margin:3px 0;gap:12px}
+.sidebar .nav-item .icon{width:20px;height:20px}
+.sidebar .collection-symbol{width:24px;height:24px;font-size:12px}
 }
-@media(min-width:761px) and (max-width:1250px){.sidebar .nav-item{font-size:11px}}
