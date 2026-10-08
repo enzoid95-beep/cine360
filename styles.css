@@ -999,3 +999,6 @@ body :not(svg):not(svg *)::placeholder{color:#ffffffa0!important}
 .session-action,.filter-bar button.selected,.choice-card .primary,.wish-btn,.trend-choice[aria-pressed="true"]{color:#1d2415!important}
 .sidebar .nav-item:hover .collection-symbol,.sidebar .nav-item.active .collection-symbol{color:#0a7551!important}
 .skip-link{color:#fff!important}
+
+/* ===== Estrelas e notas em dourado ===== */
+.stars,.stars *,.rating-star,.rating-star *,.rating-num,.rating-value,.add-rating-value b,.tmdb-note,.pub-rating,.hero-rating .stars{color:var(--gold)!important}
