@@ -694,3 +694,14 @@ img[data-image]{background:#191a22}
   .sidebar{backdrop-filter:none;-webkit-backdrop-filter:none;background:#0e0f14fa}
   .trailer-window .trailer-play-btn{width:60px;height:44px;font-size:19px}
 }
+
+/* iPhone (tela inicial e Safari): área segura para barra de status e indicador de início */
+@media (max-width:760px){
+  .sidebar{box-sizing:border-box;height:calc(71px + env(safe-area-inset-bottom));padding:0 0 env(safe-area-inset-bottom);background:#0e0f14;backdrop-filter:none;-webkit-backdrop-filter:none;overflow:hidden}
+  .sidebar>nav,#navigation{height:71px;display:flex;align-items:stretch}
+  .app-shell{padding-bottom:calc(71px + env(safe-area-inset-bottom))}
+  .topbar{padding-top:calc(20px + env(safe-area-inset-top))}
+  #navigation .nav-item{padding-bottom:8px}
+  .sidebar.more-open{z-index:60}
+  .sidebar nav .nav-item.active{background:none}
+}
