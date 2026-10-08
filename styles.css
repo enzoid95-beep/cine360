@@ -405,3 +405,26 @@ input.is-locked,textarea.is-locked{background:#1a1c21!important;border-style:das
 .level-dialog .lp-stats{margin:20px 0}
 .level-dialog h4{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--lilac);margin:0 0 10px}
 @media(max-width:640px){.lv-hero{flex-direction:column;align-items:flex-start}.level-dialog{padding:24px 20px}.level-dialog h2{font-size:28px}}
+.level-dialog[open]{overflow:hidden;max-height:calc(100dvh - 32px)}
+.level-dialog{width:min(1200px,calc(100vw - 32px));padding:26px 30px}
+.level-dialog h2{font-size:32px;margin:8px 0 16px}
+.lv-layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:32px;align-items:start}
+.lv-side{display:flex;flex-direction:column;gap:6px}
+.lv-side .lv-ring{width:150px;height:150px;margin:6px 0 10px}
+.lv-side .lv-copy{width:100%}
+.lv-side .lp-stats{grid-template-columns:repeat(3,minmax(0,1fr));margin:18px 0 0}
+.lv-side .lp-stats div{min-width:0;padding:8px 4px}
+.lv-side .lp-stats b{font-size:15px}
+.lv-main h4{margin-top:4px}
+.lv-trophies{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.lv-trophies .trophy{padding:8px 10px;gap:8px;align-items:center;min-width:0}
+.lv-trophies .trophy-icon{width:32px;height:32px;font-size:16px}
+.lv-trophies .trophy>div{min-width:0}
+.lv-trophies .trophy strong{font-size:11.5px;line-height:1.25}
+.lv-trophies .trophy small{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:10px;line-height:1.3}
+@media(max-width:1100px){.lv-trophies{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:900px){.level-dialog[open]{overflow-y:auto}.lv-layout{grid-template-columns:1fr;gap:20px}.lv-trophies{grid-template-columns:repeat(2,minmax(0,1fr))}.lv-side .lv-ring{width:120px;height:120px}}
+.lv-trophies .trophy{padding:7px 10px}
+.lv-trophies .trophy small{-webkit-line-clamp:1;font-size:10px}
+.lv-trophies .trophy strong{-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
+.lv-main h4{margin-bottom:8px}
