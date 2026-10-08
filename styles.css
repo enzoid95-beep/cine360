@@ -473,11 +473,10 @@ input.is-locked,textarea.is-locked{background:#1a1c21!important;border-style:das
 .plat-chips-lg{margin:4px 0 16px}
 .plat-chips-lg .plat-chip{font-size:13px;padding:7px 13px}
 .trend-open{all:unset;display:block;width:100%;cursor:pointer;border-radius:12px}
-.trend-open>img,.trend-open .poster-fallback{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:12px;border:1px solid #cfac6a40;box-shadow:0 8px 18px #0006;display:block;transition:transform .2s ease,box-shadow .2s ease}
-.trend-open:hover>img,.trend-open:hover .poster-fallback{transform:translateY(-2px);box-shadow:0 0 0 1px #ffa05ca1,0 0 18px #ff8a3d6b,0 12px 22px #0008}
+.trend-open .poster-art>.poster-fallback{height:100%;width:100%;box-sizing:border-box}
+.trend-card:hover .poster-art{transform:translateY(-4px);box-shadow:inset 0 1px 0 #ffb27a44,0 0 0 1px #ffa05ca1,0 0 8px #ff8a3d9b,0 0 26px #ff6a1f6b,0 0 56px #ff5a1a3c,0 13px 24px #0008}
 .trend-title{display:block;font:700 14px/1.3 var(--font);color:#eeedf0;margin:10px 0 0}
 .trend-card .up-copy{padding-top:8px}
-.trend-quick{display:flex;flex-wrap:wrap;gap:6px}
 .wish-btn.ghost{background:transparent;color:#e1eab0;box-shadow:inset 0 0 0 1px #cbd58e88}
 .wish-btn.ghost:hover{background:#e1eab01f}
 .trend-actions{display:grid;gap:18px}
