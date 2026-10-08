@@ -487,10 +487,6 @@ input.is-locked,textarea.is-locked{background:#1a1c21!important;border-style:das
 
 img[data-image]{background:#191a22}
 
-.topbar-logo{height:62px;width:auto;margin-left:auto;flex:none;display:block;align-self:center}
-@media(max-width:1250px){.topbar-logo{height:54px}}
-@media(max-width:760px){.topbar-logo{height:46px}}
-@media(max-width:560px){.topbar-logo{display:none}}
 
 /* Roleta da sessão e destaque clicável */
 @keyframes fanFlip{0%{transform:rotateY(90deg) scale(.86);opacity:0}60%{opacity:1}100%{transform:none}}
@@ -531,3 +527,4 @@ img[data-image]{background:#191a22}
 .collection-card.harrypotter:after{background:linear-gradient(90deg,#241610ee,#2a1a118a 65%,#2a1a1040)}
 .starwars.collection-symbol{background:#1d3352;color:#c4dcff}
 .harrypotter.collection-symbol{background:#4a3018;color:#f4d89a}
+.brand-logo{display:block;width:100%;height:auto}
