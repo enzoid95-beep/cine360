@@ -1002,3 +1002,9 @@ body :not(svg):not(svg *)::placeholder{color:#ffffffa0!important}
 
 /* ===== Estrelas e notas em dourado ===== */
 .stars,.stars *,.rating-star,.rating-star *,.rating-num,.rating-value,.add-rating-value b,.tmdb-note,.pub-rating,.hero-rating .stars{color:var(--gold)!important}
+
+/* ===== Dropdown do sorteio abre por cima do botão ===== */
+.choice-card{overflow:visible}
+.choice-card .drop-menu.open{z-index:40}
+.choice-card .drop-panel{z-index:41}
+.choice-card .choice-options{z-index:40}
