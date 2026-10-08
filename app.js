@@ -183,6 +183,7 @@ async function hydrateLiveTrends(){const key=tmdbKey();if(!key||liveBusy||liveTr
   const streaming=await Promise.all(found.map(async g=>{const q=`&with_watch_providers=${g.id}&with_watch_monetization_types=flatrate&sort_by=popularity.desc`;const [tv,movie]=await Promise.all([api('discover/tv',q),api('discover/movie',q)]);return {platform:g.platform,tv:take(tv,'tv'),movie:take(movie,'movie')}}));
   const best=await api('discover/movie',`&sort_by=vote_average.desc&vote_count.gte=300&primary_release_year=${year}`);
   const rated=best.filter(r=>r.title&&r.poster_path).slice(0,8).map(r=>{meta.push([normalized(r.title),`https://image.tmdb.org/t/p/w500${r.poster_path}`,r.overview||'',r.id,'movie']);return {title:r.title,critics:null,audience:null,avg:Number(r.vote_average).toFixed(1)}});
+  if(!streaming.some(g=>g.tv.length||g.movie.length)||!rated.length)throw new Error('empty');
   const data={at:Date.now(),updated:new Date().toLocaleDateString('pt-BR',{timeZone:'America/Sao_Paulo'}),ratedLabel:`TMDB, filmes de ${year} mais bem avaliados`,streaming,rated,meta,sources:[['TMDB: popularidade por plataforma no Brasil','https://www.themoviedb.org/'],[`TMDB: filmes de ${year} mais bem avaliados`,'https://www.themoviedb.org/']]};
   try{localStorage.setItem(LIVE_TRENDS_KEY,JSON.stringify(data))}catch{}
   applyLiveTrends(data);if(view==='trends')render();
