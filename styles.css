@@ -506,15 +506,16 @@ img[data-image]{background:#191a22}
 .top10-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:18px 14px}
 @media(max-width:1250px){.top10-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
 @media(max-width:640px){.top10-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.top10-item a{display:block;color:inherit;text-decoration:none}
+.top10-open{all:unset;display:block;width:100%;cursor:pointer;border-radius:10px}
+.top10-open:focus-visible{outline:2px solid #ff8a3d;outline-offset:4px}
 .top10-poster{position:relative}
 .top10-poster>img,.top10-poster>.poster-fallback{width:100%;height:100%;object-fit:cover;display:block}
 .top10-rank{position:absolute;left:8px;bottom:6px;font:800 38px/1 var(--display);color:#ff8a3d;text-shadow:0 0 4px #ff6a1f,0 0 14px #ff6a1f99,0 2px 6px #000;transition:color .2s,text-shadow .2s;z-index:2;pointer-events:none}
-.top10-item a:hover .top10-rank{color:#ff6a1f;text-shadow:0 0 6px #ff6a1f,0 0 20px #ff6a1fcc,0 2px 6px #000}
+.top10-open:hover .top10-rank{color:#ff6a1f;text-shadow:0 0 6px #ff6a1f,0 0 20px #ff6a1fcc,0 2px 6px #000}
 .top10-copy{padding-top:8px}
 .top10-copy strong{display:block;font:700 13px/1.3 var(--font);color:#eeedf0;margin-bottom:4px}
 .top10-copy small{display:block;font-size:11px;color:#aeb0bc;margin-top:3px}
-.top10-item a:hover .top10-poster{transform:translateY(-3px)}
+.top10-open:hover .top10-poster{transform:translateY(-3px)}
 .top10-poster{transition:transform .2s}
 
 /* Trailers dentro dos cards */
