@@ -977,32 +977,11 @@ img[data-image]{background:#191a22}
   .detail-dialog .close-dialog:focus-visible{box-shadow:0 0 0 2px #0a7551,0 4px 16px #000c}
 }
 
-/* ===== Continue de onde parou ===== */
-.continue-section{margin:0 0 30px}
-.continue-section>.eyebrow{display:block;margin-bottom:12px}
-.continue-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
-.continue-card{display:flex;gap:14px;align-items:center;padding:12px;border-radius:14px;background:#17181e;border:1px solid #2c3a2a;min-width:0}
-.continue-poster{flex:0 0 78px;width:78px;aspect-ratio:2/3;padding:0;border:0;border-radius:10px;overflow:hidden;background:#111}
-.continue-poster img,.continue-poster .poster-fallback{width:100%;height:100%;object-fit:cover;display:block;font-size:10px}
-.continue-copy{min-width:0;flex:1;display:grid;gap:6px;justify-items:start}
-.continue-copy h3{font-size:15px;margin:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.continue-copy p{margin:0;font-size:13px;color:#b7b8c4}
-.continue-copy p b{color:#f1e4cb}
-.continue-mark{padding:9px 12px;min-height:38px;border-radius:9px;background:#0a7551;color:#eafaf3;font-size:13px;font-weight:800;border:0;cursor:pointer}
-.continue-mark:hover{background:#4fb88e}
 
 /* Gestos: o card acompanha o dedo; a cor indica o destino */
 .poster-card{touch-action:pan-y}
 .poster-card[data-swipe="right"] .poster-art{box-shadow:0 0 0 3px #0a7551}
 .poster-card[data-swipe="left"] .poster-art{box-shadow:0 0 0 3px #f0cd80}
-
-@media (max-width:1024px){
-  .continue-row{display:flex;overflow-x:auto;scroll-snap-type:x proximity;gap:12px;scrollbar-width:none;margin:0 -20px;padding:0 20px 6px}
-  .continue-row::-webkit-scrollbar{display:none}
-  .continue-card{flex:0 0 min(340px,82vw);scroll-snap-align:start}
-}
-.continue-poster .poster-fallback{letter-spacing:0;padding:6px;font-size:9px;line-height:1.25;overflow:hidden;word-break:break-word}
-.continue-poster .poster-fallback span{font-size:7.5px;letter-spacing:.3px;display:block;margin-bottom:3px}
 
 /* ===== Fundo: sala de cinema à noite (verde musgo) ===== */
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
@@ -1013,3 +992,10 @@ body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opa
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .9 0 0 0 0 .95 0 0 0 0 .85 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E")}
 .sidebar{background:radial-gradient(circle,#0b120b 0 2.3px,rgba(11,18,11,0) 2.9px) right 0 top 12px/12px 24px repeat-y,var(--sidebar)}
 @media (max-width:1024px){.sidebar{background:var(--sidebar)}}
+
+/* ===== Texto sempre branco (exceto sobre fundos claros) ===== */
+body :not(svg):not(svg *){color:#fff!important}
+body :not(svg):not(svg *)::placeholder{color:#ffffffa0!important}
+.session-action,.filter-bar button.selected,.choice-card .primary,.wish-btn,.trend-choice[aria-pressed="true"]{color:#1d2415!important}
+.sidebar .nav-item:hover .collection-symbol,.sidebar .nav-item.active .collection-symbol{color:#0a7551!important}
+.skip-link{color:#fff!important}
