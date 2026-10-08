@@ -491,3 +491,9 @@ img[data-image]{background:#191a22}
 @media(max-width:1250px){.topbar-logo{height:54px}}
 @media(max-width:760px){.topbar-logo{height:46px}}
 @media(max-width:560px){.topbar-logo{display:none}}
+
+/* Roleta da sessão e destaque clicável */
+@keyframes fanFlip{0%{transform:rotateY(90deg) scale(.86);opacity:0}60%{opacity:1}100%{transform:none}}
+.poster-fan .fan-flip{animation:fanFlip .5s cubic-bezier(.2,.8,.2,1) backwards}
+@media (prefers-reduced-motion: reduce){.poster-fan .fan-flip{animation:none}}
+.hero-carousel[data-hero-open]{cursor:pointer}
