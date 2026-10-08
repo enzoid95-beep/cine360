@@ -561,3 +561,14 @@ img[data-image]{background:#191a22}
 .greeting-side{flex-wrap:wrap;max-width:100%}
 .level-pill{max-width:100%;flex-wrap:wrap}
 }
+.mobile-more{display:none}
+@media(max-width:760px){
+.mobile-more{display:flex}
+.sidebar nav .nav-item{width:auto;flex:1 1 0;min-width:0;padding:9px 0}
+.sidebar.more-open .sidebar-collections{display:flex;flex-direction:column;position:absolute;left:0;right:0;bottom:100%;background:#0e0f14;border-top:1px solid #605565;padding:14px 16px 10px;gap:2px;max-height:60vh;overflow-y:auto;z-index:26}
+.sidebar.more-open .sidebar-collections .nav-caption{display:block;margin:4px 0 6px}
+.sidebar.more-open .sidebar-collections .nav-item{flex-direction:row;text-align:left;font-size:14px;padding:12px 10px;min-height:44px}
+}
+.collection-tools{margin:0 0 16px}
+
+.sidebar.more-open{z-index:60;overflow:visible}
