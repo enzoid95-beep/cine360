@@ -497,3 +497,5 @@ img[data-image]{background:#191a22}
 .poster-fan .fan-flip{animation:fanFlip .5s cubic-bezier(.2,.8,.2,1) backwards}
 @media (prefers-reduced-motion: reduce){.poster-fan .fan-flip{animation:none}}
 .hero-carousel[data-hero-open]{cursor:pointer}
+
+.pub-rating{color:#f5c76b;font-weight:700;letter-spacing:.02em}
