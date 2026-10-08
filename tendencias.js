@@ -1,6 +1,7 @@
-// Tendências: rankings semanais de streaming (Miscelana, semanas de 12/09 a 03/10/2026)
-// e lista de bem avaliados (Rotten Tomatoes, via Bnews São Paulo).
-// Para atualizar: edite as listas abaixo. Capas: informe uma chave gratuita do TMDB em tmdbKey
+// Tendências: lista de reserva (fallback). Com a chave do TMDB, o site busca sozinho os títulos
+// mais populares de cada plataforma no Brasil e os melhor avaliados do ano, e atualiza a cada 6 horas.
+// Esta lista só aparece antes da primeira busca ou se o TMDB não responder.
+// Capas e chave: a chave do TMDB fica em tmdbKey.
 // para o site buscar as capas dos títulos que ainda não estão no catálogo.
 window.CINE360_TRENDS = {
   updated: '07/10/2026',
