@@ -547,3 +547,9 @@ img[data-image]{background:#191a22}
 .trailer-window .trailer-state{font-size:13px}
 .card-copy{padding-top:18px}
 .trend-title{margin-top:16px}
+@media(min-width:761px){
+.sidebar .brand{padding:0}
+.sidebar .brand-logo{width:calc(100% + 16px);max-width:none;margin:0 -8px}
+.sidebar .nav-item{font-size:12px;min-height:40px;padding:9px 12px;margin:1px 0;gap:10px}
+}
+@media(min-width:761px) and (max-width:1250px){.sidebar .nav-item{font-size:11px}}
