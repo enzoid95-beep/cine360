@@ -527,3 +527,7 @@ img[data-image]{background:#191a22}
 .trailer-state{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:14px;text-align:center;color:#eeedf0;font:600 12px/1.4 var(--font)}
 .trailer-close{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);z-index:5;display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;border:1px solid #ffffff66;background:#000c;color:#fff;font:700 11px/1 var(--font);letter-spacing:.04em;cursor:pointer}
 .trailer-close:hover{background:#ff7a3d;border-color:#ff7a3d}
+.collection-card.starwars:after{background:linear-gradient(90deg,#0d1726ee,#0d1a2e8a 65%,#0d1a2e40)}
+.collection-card.harrypotter:after{background:linear-gradient(90deg,#241610ee,#2a1a118a 65%,#2a1a1040)}
+.starwars.collection-symbol{background:#1d3352;color:#c4dcff}
+.harrypotter.collection-symbol{background:#4a3018;color:#f4d89a}
