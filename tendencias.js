@@ -5,7 +5,7 @@
 window.CINE360_TRENDS = {
   updated: '07/10/2026',
   weeks: 'semanas de 12/09 a 03/10/2026',
-  tmdbKey: '',
+  tmdbKey: '0f4de87e01bd3f8ec40409ed15ef34b9',
   streaming: [
     { platform: 'Netflix',
       tv: ['Monster: The Lizzie Borden Story', 'Not a Stranger', 'LEGO One Piece', 'East of Eden', 'Crew Girl', 'The Perfect Lie', 'The Gentlemen', 'Death of the Past', 'Fauda'],
