@@ -516,10 +516,11 @@ img[data-image]{background:#191a22}
 .top10-poster{transition:transform .2s}
 
 /* Trailers dentro dos cards */
-.trailer-btn{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#0b0c10cc;color:#fff;border:1px solid #ffffff66;box-shadow:0 0 0 4px #0003;cursor:pointer;z-index:3;opacity:.92;transition:transform .2s,opacity .2s,background .2s}
-.trailer-btn svg{width:20px;height:20px;margin-left:3px}
-.trailer-btn:hover,.trailer-btn:focus-visible{background:#ff7a3d;opacity:1;transform:translate(-50%,-50%) scale(1.08);outline:none}
-.trailer-dialog{width:min(980px,calc(100vw - 32px));padding:20px}
-.trailer-title{font:700 20px/1.2 var(--font);margin:0 0 14px;padding-right:48px}
-.trailer-frame{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000}
-.trailer-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.trailer-link{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:5px 11px;border-radius:999px;border:1px solid #ffb27a66;background:#ff7a3d1f;color:#ffd2b3;font:700 11px/1 var(--font);letter-spacing:.04em;cursor:pointer}
+.trailer-link svg{width:10px;height:10px}
+.trailer-link:hover,.trailer-link:focus-visible{background:#ff7a3d;color:#fff;outline:none}
+.trailer-inline{position:absolute;inset:0;z-index:4;background:#000;overflow:hidden}
+.trailer-inline iframe{position:absolute;left:0;top:50%;transform:translateY(-50%);width:100%;height:auto;aspect-ratio:16/9;border:0}
+.trailer-state{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:14px;text-align:center;color:#eeedf0;font:600 12px/1.4 var(--font)}
+.trailer-close{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);z-index:5;display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;border:1px solid #ffffff66;background:#000c;color:#fff;font:700 11px/1 var(--font);letter-spacing:.04em;cursor:pointer}
+.trailer-close:hover{background:#ff7a3d;border-color:#ff7a3d}
