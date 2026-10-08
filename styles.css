@@ -1040,3 +1040,8 @@ body :not(svg):not(svg *)::placeholder{color:#ffffffa0!important}
 .hero-poster-mode .hero-blur{position:absolute;inset:-12%;width:124%;height:124%;max-width:none;object-fit:cover;filter:blur(22px) saturate(1.1) brightness(.55)}
 .hero-poster-mode .hero-poster{position:absolute;top:50%;right:6%;transform:translateY(-50%);height:88%;width:auto;aspect-ratio:2/3;object-fit:cover;border-radius:12px;box-shadow:0 18px 40px #000a;border:1px solid #ffffff1f}
 @media(max-width:760px){.hero-poster-mode .hero-poster{display:none}}
+
+/* Carrossel: sinopse completa, sem barra de rolagem; o card cresce para caber o texto */
+.hero-carousel{height:auto;min-height:410px}
+.hero-carousel .hero-content{height:auto;padding-bottom:72px}
+.hero-carousel .hero-synopsis{height:auto;max-height:none;overflow:visible;display:block;-webkit-line-clamp:none;-webkit-box-orient:initial}
