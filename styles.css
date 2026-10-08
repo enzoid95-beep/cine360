@@ -572,3 +572,8 @@ img[data-image]{background:#191a22}
 .collection-tools{margin:0 0 16px}
 
 .sidebar.more-open{z-index:60;overflow:visible}
+.count-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.select-mark{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:26px;height:26px;border-radius:50%;border:2px solid #fff;background:#0009;color:#fff;display:grid;place-items:center;font-weight:800;font-size:14px;z-index:3;pointer-events:none}
+.select-mark.on{background:var(--coral);border-color:var(--coral)}
+.bulk-bar{position:sticky;top:0;z-index:20;display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:#14151bf5;border:1px solid #ff8a3d66;border-radius:12px;padding:10px 14px;margin:12px 0}
+.bulk-bar button:disabled{opacity:.45;cursor:not-allowed}
