@@ -964,3 +964,15 @@ img[data-image]{background:#191a22}
   .detail-dialog .detail-controls,
   .detail-dialog .trend-actions>div:first-child{left:50%;right:auto;width:min(760px,100vw);transform:translateX(-50%)}
 }
+
+/* Botão de fechar do diálogo: sempre visível, abaixo da barra de status do iPhone */
+@media (max-width:1024px){
+  .detail-dialog .close-dialog{position:fixed;z-index:40;top:calc(env(safe-area-inset-top,0px) + 12px);right:max(12px,calc((100vw - 760px) / 2 + 12px));width:48px;height:48px;min-width:48px;min-height:48px;border-radius:50%;background:#1d1f25;border:1.5px solid #ffffffa0;color:#ffffff;box-shadow:0 4px 16px #000c;display:grid;place-items:center;padding:0}
+  .detail-dialog .close-dialog svg{width:22px;height:22px;stroke:#ffffff;stroke-width:2.2}
+  .detail-dialog .close-dialog:hover,.detail-dialog .close-dialog:active{background:#2a2d36}
+  .detail-dialog .close-dialog:focus-visible{box-shadow:0 0 0 3px #00ffef,0 4px 16px #000c}
+}
+@media (max-width:1024px){
+  .detail-dialog .close-dialog:focus,.detail-dialog .close-dialog:focus-visible{outline:none}
+  .detail-dialog .close-dialog:focus-visible{box-shadow:0 0 0 2px #00ffef,0 4px 16px #000c}
+}
