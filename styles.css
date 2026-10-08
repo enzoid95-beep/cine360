@@ -1008,3 +1008,28 @@ body :not(svg):not(svg *)::placeholder{color:#ffffffa0!important}
 .choice-card .drop-menu.open{z-index:40}
 .choice-card .drop-panel{z-index:41}
 .choice-card .choice-options{z-index:40}
+
+/* ===== Diálogo de adicionar título: nota que cabe em qualquer largura ===== */
+#addDialog .rating-picker{font-size:clamp(15px,4.6vw,24px);gap:0;max-width:100%}
+#addDialog .rating-star{width:1.15em;font-size:1em}
+#addDialog .add-rating{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 12px;padding:12px 14px}
+#addDialog .add-rating[hidden]{display:none}
+#addDialog .add-rating-label{margin:0;white-space:nowrap}
+#addDialog .add-rating-clear{margin:0;white-space:nowrap;justify-self:end;grid-column:2;grid-row:1}
+#addDialog .add-rating-row{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:nowrap;min-width:0}
+#addDialog .add-rating-value{flex:0 0 auto}
+
+/* ===== Diálogo de adicionar título na horizontal (sem rolagem) ===== */
+@media (min-width:761px){
+  #addDialog{width:min(1040px,calc(100vw - 48px));padding:30px 36px;overflow:auto;max-height:calc(100dvh - 32px)}
+  #addDialog h2{font-size:30px;margin:8px 0 6px}
+  #addDialog>.muted{margin-bottom:12px}
+  #addDialog #addForm{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:0 30px;align-items:start}
+  #addDialog .title-search{grid-column:1;grid-row:1;margin:14px 0 8px}
+  #addDialog .read-choice{grid-column:2;grid-row:1;margin:14px 0 8px}
+  #addDialog #selectedTitle{grid-column:1;grid-row:2;margin:6px 0 0}
+  #addDialog #addRating{grid-column:2;grid-row:2;margin:6px 0 0}
+  #addDialog .manual-fields{grid-column:1/-1;grid-row:3;margin:14px 0}
+  #addDialog #addSubmit{grid-column:1/-1;grid-row:4;margin-top:4px}
+  #addDialog .form-note{grid-column:1/-1;grid-row:5;margin:10px 0 0}
+}
